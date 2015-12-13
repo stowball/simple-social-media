@@ -1,0 +1,28 @@
+{
+  "name": "simple-social-network",
+  "version": "0.1.0",
+  "description": "A simple, mock-social media, client-side Angular application",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stowball/simple-social-network.git"
+  },
+  "author": "Matt Stow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stowball/simple-social-network/issues"
+  },
+  "homepage": "https://github.com/stowball/simple-social-network",
+  "devDependencies": {
+    "http-server": "^0.8.5"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6"
+  }
+}

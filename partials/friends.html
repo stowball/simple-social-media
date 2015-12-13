@@ -1,0 +1,10 @@
+<aside>
+  <ul class="friends">
+    <li class="friends__item">
+      <a class="friends__link" href="#/">Home</a>
+    </li>
+    <li class="friends__item" ng-repeat="friend in friends">
+      <a class="friends__link" href="#/friend/{{friend.id}}/{{friend.name}}">{{friend.name}}</a>
+    </li>
+  </ul>
+</aside>

@@ -1,0 +1,157 @@
+/*
+ * Reset
+ */
+
+body {
+  background: #f5f8fa;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Layout
+ */
+
+.layout__main {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .layout {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+  }
+
+  .layout__main {
+    flex-grow: 1;
+  }
+
+  .layout__sub {
+    flex-basis: 300px;
+    margin-left: 20px;
+  }
+}
+
+/*
+ * Status Update module
+ */
+
+.status-update {
+  background: #e6f1f3;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.status-update__input {
+  border: 1px solid #bbb;
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.status-update__button {
+  background: #328f9b;
+  border: 1px solid #28737d;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+.status-update__button:hover,
+.status-update__button:focus {
+  background: #28737d;
+}
+
+/*
+ * Posts module
+ */
+
+.posts__list-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  padding: 10px;
+}
+
+.post-meta {
+  font-size: 13px;
+  display: flex;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.post-meta__name {
+  color: #057685;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.post-meta__name:hover,
+.post-meta__name:focus {
+  text-decoration: underline;
+}
+
+.post-meta__time {
+  margin: 0;
+}
+
+.posts__text {
+  margin: 0;
+}
+
+/*
+ * Friends module
+ */
+
+.friends__link {
+  background: #fff;
+  color: #057685;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 2px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.friends__link:hover,
+.friends__link:focus {
+  background: #f8fbfb;
+}
+
+/*
+ * Utilities
+ */
+
+.u-hide-visually {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}

@@ -1,0 +1,19 @@
+<main>
+  <h1>{{name}}&rsquo;s posts</h1>
+  
+  <ul class="posts">
+    <li class="posts__list-item" ng-repeat="post in posts">
+      <post
+        id="{{id}}"
+        name="{{name}}"
+        date="{{post.date}}"
+        text="{{post.text}}" />
+    </li>
+    <li class="posts__list-item" ng-show="!posts || posts.length == 0">
+      <post
+        id="{{id}}"
+        name="{{name}}"
+        text="{{'Has not posted yet'}}" />
+    </li>
+  </ul>
+</main>

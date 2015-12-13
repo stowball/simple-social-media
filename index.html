@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" ng-app="socialApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Simple Social Network</title>
+  <link rel="stylesheet" href="css/all.css" />
+
+  <script src="node_modules/lodash/index.js"></script>
+  <script src="node_modules/moment/min/moment.min.js"></script>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/filters.js"></script>
+</head>
+<body>
+
+  <div class="layout">
+    <div class="layout__main" ng-view></div>
+
+    <div class="layout__sub">
+      <friends />
+    </div>
+  </div>
+
+</body>
+</html>
